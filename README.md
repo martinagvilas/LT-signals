@@ -1,10 +1,10 @@
-# TRACING THE TRACES: LATENT TEMPORAL SIGNALS FOR EFFICIENT AND ACCURATE REASONING
+# Tracing the Traces: Latent Temporal Signals for Efficient and Accurate Reasoning
 
 Code accompanying the paper https://arxiv.org/abs/2510.10494, published at ICLR 2026.
 
 ## Environment setup
 
-The pipeline requires Python 3.10, PyTorch with CUDA 12, vLLM (for generation), and HuggingFace Transformers (for hidden-state extraction). Create a conda environment from scratch:
+The pipeline requires Python 3.10, PyTorch with CUDA 12, vLLM (for answer generation), and HuggingFace Transformers (for hidden-state extraction). Create a conda environment from scratch:
 
 ```bash
 conda create -n lt-signals python=3.10 -y
@@ -94,6 +94,7 @@ python src/internal_representations/compute_internal_representations.py \
 ```
 
 Repeat for each model and dataset.
+
 The `--n_tokens` argument controls the segment length; the paper uses 500 by default
 (also run with 100, 300, 700 to reproduce the segment-length ablation).
 
