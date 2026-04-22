@@ -1,0 +1,30 @@
+# Results and model weights
+results/
+llms/
+
+# Python
+__pycache__/
+*.py[cod]
+*.egg-info/
+*.egg
+.eggs/
+dist/
+build/
+
+# Jupyter
+.ipynb_checkpoints/
+*.ipynb_checkpoints
+
+# IDE
+.vscode/
+
+# Logs and job output
+nohup.out
+*.log
+
+# macOS
+.DS_Store
+
+# Environment
+.env
+*.env
